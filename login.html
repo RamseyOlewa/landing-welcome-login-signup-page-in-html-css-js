@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <h2>Sign In</h2>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #5e17eb; /* Background color */
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: #ffffff;
+        }
+
+        h2{
+            text-align: right;
+        }
+
+        .container {
+            max-width: 800px;
+            height: 450px;
+            padding: 40px;
+            background-color: #fff; /* Container background color */
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 10); /* Container shadow */
+            position: relative;
+            color:#333;
+            margin-bottom: -90px;
+            align-content: center;
+
+        }
+        
+        .welcome-text {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .button-container {
+            text-align: center;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #000000; /* Default button color */
+            color: #ffffff; /* Default button text color */
+            border: none;
+            border-radius: 10px; /* Adjust the border radius for rounded buttons */
+            cursor: pointer;
+            margin: 10px; /* Adjust the spacing between buttons */
+            
+        }
+        
+        .arrow {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-size: 24px;
+            cursor: pointer;
+            color: #ffffff;
+        }
+        .signup-link {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 18px;
+            text-decoration: none;
+            color: #ffffff;
+        }
+
+           input{
+            border-radius: 10px;
+            margin-top: 15px;
+            margin-left: -10px;
+       }
+
+         .forgot-password {
+            text-align: right;
+            margin-top: 20px;
+            font-size: 14px; 
+        }
+
+        .forgot-password a {
+            text-decoration: none;
+            color: #000000; /* Link color */
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+   
+    <a href="welcome.html" class="arrow">&larr;</a>
+    <a href="signup.html" class="signup-link">Sign Up</a>
+    <div class="container">
+        <div class="boundary"></div>
+        <div class="welcome-text">
+           
+            <form>
+                <input type="text" name="username" placeholder="Username" style="width: 100%; padding: 10px; margin-bottom: 10px;">
+                <input type="password" name="password" placeholder="Password" style="width: 100%; padding: 10px; margin-bottom: 10px;">
+                <div class="forgot-password">
+                    <a href="#">Forgot Password?</a>
+                </div>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+       
+    </div>
+</body>
+</html>

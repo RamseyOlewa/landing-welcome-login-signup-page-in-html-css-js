@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Page</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #fffefe; /* Background color */
+            min-height: 100vh; /* Ensure the body covers the full viewport height */
+            display: flex;
+            flex-direction: column;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            margin-top: auto; /* Move the container to the bottom */
+            margin-bottom: -20px; /* Add some space between the container and the bottom of the page */
+            padding: 30px; /* Increase the padding for a bigger container */
+            background-color: #5e17eb; /* Container background color */
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Container shadow */
+            height: 250px;
+            color: #fffeee;
+        }
+      
+        .welcome-text {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .button-container {
+            text-align: center;
+        }
+        /* Button styles */
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: white; /* Default button color */
+            color: black; /* Default button text color */
+            border: none;
+            border-radius: 30px; /* Adjust the border radius for rounded buttons */
+            cursor: pointer;
+            margin: 30px; /* Adjust the spacing between buttons */
+            transition: background-color 1s; /* Add a smooth transition for color change */
+        }
+        button:hover {
+            background-color: #000000; /* Change button color on hover */
+            color: #ffffff;
+        }
+
+        .logo {
+            display: block;
+            margin: auto;
+            max-width: 200px;
+            height: auto;
+            margin-bottom: 20px; /* Add some space between the logo and the container */
+        }
+    </style>
+</head>
+<body>
+    <img src="images/logo.jpg" alt="Logo" class="logo">
+    <div class="container">
+        
+        <div class="welcome-text">
+            <h2>Welcome to Chuicha!</h2>
+            <p>Chuicha is the best choice you have made. Enjoy navigating through our app. Thank you for choosing us again!</p>
+        </div>
+
+        <div class="button-container">
+            <button onclick="window.location.href='signup.html'">Sign Up</button>
+            <button onclick="window.location.href='login.html'">Log In</button>
+        </div>
+    </div>
+</body>
+</html>

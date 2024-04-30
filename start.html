@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start Page</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #ffffff; /* Change background color as needed */
+            position: relative;
+        }
+        .semicircle {
+            position: absolute;
+            width: 30%;
+            height: 30%;
+            background-color: #5e17eb; /* Change semicircle color as needed */
+        }
+        .top-left {
+            top: 0;
+            left: 0;
+            border-top-right-radius: -100%;
+            border-bottom-right-radius: 1000px;
+        }
+        .bottom-right {
+            bottom: 0;
+            right: 0;
+            border-bottom-left-radius: -100%;
+            border-top-left-radius: 1000px;
+        }
+    </style>
+</head>
+<body>
+    <div class="semicircle top-left"></div>
+    <div class="semicircle bottom-right"></div>
+    <img src="images/logo.jpg" alt="Logo" style="max-width: 100%; height: auto;">
+
+    <script>
+        // Redirect to the welcome page after 5 seconds
+        setTimeout(function() {
+            window.location.href = "welcome.html"; // Change the URL to your welcome page
+        }, 3000); // 5000 milliseconds = 5 seconds
+    </script>
+</body>
+</html>
